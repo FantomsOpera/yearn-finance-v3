@@ -35,7 +35,7 @@ export class UserServiceImpl implements UserService {
     } else {
       addressEnsName = await provider.lookupAddress(address);
     }
-    return addressEnsName.toString().toLowerCase();
+    return addressEnsName.toLowerCase();
   }
 
   /* -------------------------------------------------------------------------- */

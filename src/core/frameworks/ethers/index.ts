@@ -33,7 +33,7 @@ export const signMessage = (provider: ethers.providers.ExternalProvider, message
 export const getContract = (
   address: string,
   contractABI: ethers.ContractInterface,
-  provider: ethers.providers.Provider | ethers.Signer
+  provider: ethers.providers.Provider | ethers.Signer | ethers.providers.JsonRpcProvider | undefined | any
 ) => {
   return new ethers.Contract(address, contractABI, provider);
 };
